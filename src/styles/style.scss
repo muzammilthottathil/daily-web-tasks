@@ -14,24 +14,19 @@
 
 .main-page {
   position: relative;
-  width: 100%;
+  width: auto;
   height: 100vh;
 
   background: #2a2e40;
   .welcome {
-    position: absolute;
-    left: 35%;
-    top: 123px;
-
     font-family: "Roboto";
-    font-size: 100px;
-    line-height: 145.4%;
-    /* or 174px */
-
+    font-size: 5rem;
+    font-size: calc(4rem + 1vw);
+    line-height: 1.3em;
+    padding-top: 6%;
+    padding-left: 3em;
     text-align: center;
-
     color: #3a4050;
-
     text-shadow: 0px 8px 9px #161616;
   }
   a {
@@ -39,25 +34,20 @@
 
     img {
       position: absolute;
-      width: 522.5px;
-      height: 166.5px;
-      left: 699px;
-      top: 708px;
+      width: calc(16rem + 3vw);
+      top: 60%;
+      left: 53%;
     }
     p {
       position: absolute;
-      width: 212px;
-      height: 112px;
-      left: 816px;
-      top: 735px;
-
-      font-family: "Roboto";
-      font-size: 50px;
-      line-height: 112.4%;
+      top: 62%;
+      left: 57%;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2em;
       text-align: center;
-
       color: #323642;
-
       text-shadow: -2px 5px 8px #1a1c20;
     }
     img,
@@ -79,15 +69,17 @@
     .antman {
       position: absolute;
       width: 20px;
-      left: 217px;
-      top: 853px;
+      bottom: 10%;
+      left: 10%;
+
       animation: zoomEffect 350ms 1s ease-in;
       animation-fill-mode: forwards;
     }
     .sayText {
       position: absolute;
-      left: 305px;
-      top: 39px;
+      width: 16%;
+      top: 10%;
+      left: 18%;
       opacity: 0;
       animation: chat-enter 10ms 2s ease;
       animation-fill-mode: forwards;
@@ -98,9 +90,9 @@
         width: 20px;
       }
       to {
-        width: 300px;
-        left: 75px;
-        top: 148px;
+        left: 6%;
+        bottom: 10%;
+        width: 15em;
       }
     }
     @keyframes chat-enter {
@@ -119,72 +111,50 @@
 =============*/
 .home-page {
   position: relative;
-  width: 100%;
+  width: auto;
   height: 100vh;
 
   background: #2a2e40;
   .name {
-    position: absolute;
-    width: 680px;
-    height: 145px;
-    left: 218px;
-    top: 192px;
-
     font-family: "Roboto";
-
-    font-size: 100px;
-    line-height: 145.4%;
-    /* or 145px */
-
-    text-align: center;
-
+    font-size: 5rem;
+    font-size: calc(6rem + 1vw);
+    line-height: 1.3em;
+    padding-top: 10%;
+    padding-left: 2.5em;
     color: #3a4050;
-
     text-shadow: 0px 8px 9px #161616;
+    z-index: 3;
   }
   .score {
-    position: absolute;
-    width: 410px;
-    height: 145px;
-    left: 353px;
-    top: 337px;
-
+    width: 50%;
+    padding-top: 2%;
+    padding-left: 20%;
+    z-index: 3;
     font-family: "Roboto";
-
-    font-size: 100px;
-    line-height: 145.4%;
-    /* or 145px */
-
-    text-align: center;
-
+    font-size: calc(6rem + 1vw);
     color: #353a46;
-
     text-shadow: -3px 6px 12px #1e2027;
   }
   .get-task {
     img {
       position: absolute;
-      width: 522.5px;
-      height: 166.5px;
-      left: 688px;
-      top: 540px;
+      width: calc(20rem + 4vw);
+      top: 60%;
+      z-index: 3;
+      left: 40%;
     }
     p {
       position: absolute;
-      width: 212px;
-      height: 112px;
-      left: 805px;
-      top: 567px;
-
-      font-family: "Roboto";
-      font-size: 50px;
-      line-height: 112.4%;
-      /* or 56px */
-
+      z-index: 3;
+      top: 62%;
+      left: 45%;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2.5em;
       text-align: center;
-
       color: #323642;
-
       text-shadow: -2px 5px 8px #1a1c20;
     }
     &:hover {
@@ -201,29 +171,18 @@
     }
   }
   .view-review {
+    text-decoration: none;
     img {
-      position: absolute;
-      width: 917px;
-      height: 78px;
-      left: 502px;
-      top: 90%;
+      width: 50%;
+      padding-top: 22%;
+      margin-left: 25%;
     }
     p {
-      position: absolute;
-      width: 528px;
-      height: 67px;
-      left: 696px;
-      top: 91%;
-
       font-family: "Roboto";
-      font-size: 40px;
-      line-height: 145.4%;
-      /* identical to box height, or 67px */
-
+      font-size: 2.3rem;
+      margin-top: -4.5%;
       text-align: center;
-
       color: #3a3f4a;
-
       text-shadow: 0px 4px 6px #191a20;
     }
     &:hover {
@@ -242,134 +201,95 @@
 
   .img-najim {
     position: absolute;
-    width: 550px;
-    height: 544.84px;
-    left: 1211px;
-    top: 123px;
+    width: 30%;
+    right: 10%;
+    top: 10%;
   }
 }
 
 /* ============
     TASK PAGE
 =============*/
+
 .task-page {
   position: relative;
-  width: 100%;
+  width: auto;
   height: 100vh;
 
   background: #2a2e40;
   .task-number {
-    position: absolute;
-    width: 377px;
-    height: 145px;
-    left: 771px;
-    top: 109px;
-
     font-family: "Roboto";
-
-    font-size: 100px;
-    line-height: 145.4%;
-    /* or 145px */
-
+    font-size: 5rem;
+    font-size: calc(4rem + 1vw);
+    padding-top: 6%;
     text-align: center;
-
     color: #3a4050;
-
     text-shadow: 0px 8px 9px #161616;
   }
   .right-slider {
     position: absolute;
-    width: 90.01px;
-    height: 237.93px;
-    right: 6%;
-    top: 40%;
+    width: 6rem;
+    right: 5%;
+    top: 30%;
+    transform: rotate(-180deg);
   }
   .left-slider {
     position: absolute;
-    width: 90.01px;
-    height: 237.93px;
-    left: 6%;
-    top: 40%;
-
-    transform: rotate(-180deg);
+    width: 6rem;
+    left: 5%;
+    top: 30%;
   }
   .task-icon {
-    position: absolute;
     width: 51px;
-    height: 40px;
-    left: 988px;
-    top: 511px;
+    position: absolute;
+    top: 40%;
+    left: 60%;
   }
   .task-overview {
-    position: absolute;
-    width: 838px;
-    height: 375px;
-    left: 541px;
-    top: 374px;
-
     font-family: "Roboto";
-    font-size: 35px;
-    line-height: 100%;
-    /* or 35px */
-
+    margin-top: 2em;
+    margin-left: 25%;
+    font-size: 2em;
     color: #424450;
-
     text-shadow: 0px 4px 8px #262a34;
   }
   .rect-submit {
     position: absolute;
-    width: 1019px;
-    height: 101px;
-    left: 22%;
-    top: 87%;
+    width: 50%;
+    left: 25%;
+    top: 85%;
   }
   .submit-link {
-    position: absolute;
-    left: 100px;
-    top: 89%;
-
+    display: inline-block;
     font-family: "Roboto";
-
     font-size: 30px;
-    line-height: 100%;
-    /* or 35px */
-
-    text-align: center;
-
+    margin-top: 11%;
+    margin-left: 3%;
     color: #484c5b;
-
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   }
   form {
     button {
+      background: transparent;
       border: none;
       cursor: pointer;
       p {
         position: absolute;
-        width: 111px;
-        height: 35px;
-        left: 1608px;
-        top: 90%;
-
         font-family: "Roboto";
-
-        font-size: 35px;
-        line-height: 100%;
-        /* identical to box height, or 35px */
-
+        font-size: 2rem;
         text-align: center;
-
         color: #4b5063;
-
         text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-        z-index: 2;
+        z-index: 9;
+        left: 82.5%;
+        top: 87%;
       }
       img {
         position: absolute;
-        width: 223px;
-        height: 101px;
-        left: 1547px;
-        top: 87%;
+        width: 11rem;
+        left: 80%;
+        top: 84.5%;
+        z-index: 0;
       }
       &:hover {
         img,
@@ -392,18 +312,13 @@
       background: transparent;
 
       position: absolute;
-      width: 710px;
+      width: 45%;
       padding-bottom: 6px;
-      left: 30%;
-      top: 90%;
+      left: 27%;
+      top: 87%;
       z-index: 2;
-
       font-family: "Roboto";
-
       font-size: 35px;
-      line-height: 100%;
-      /* identical to box height, or 35px */
-
       color: #424450;
 
       text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
@@ -430,8 +345,8 @@
     }
     .hand {
       position: absolute;
-      left: 20%;
-      top: 90%;
+      left: 19.5%;
+      top: 88%;
       animation: handMotion 200ms;
       animation-iteration-count: 3;
     }

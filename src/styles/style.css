@@ -15,19 +15,18 @@
 =============*/
 .main-page {
   position: relative;
-  width: 100%;
+  width: auto;
   height: 100vh;
   background: #2a2e40;
 }
 
 .main-page .welcome {
-  position: absolute;
-  left: 35%;
-  top: 123px;
   font-family: "Roboto";
-  font-size: 100px;
-  line-height: 145.4%;
-  /* or 174px */
+  font-size: 5rem;
+  font-size: calc(4rem + 1vw);
+  line-height: 1.3em;
+  padding-top: 6%;
+  padding-left: 3em;
   text-align: center;
   color: #3a4050;
   text-shadow: 0px 8px 9px #161616;
@@ -42,21 +41,19 @@
 
 .main-page a img {
   position: absolute;
-  width: 522.5px;
-  height: 166.5px;
-  left: 699px;
-  top: 708px;
+  width: calc(16rem + 3vw);
+  top: 60%;
+  left: 53%;
 }
 
 .main-page a p {
   position: absolute;
-  width: 212px;
-  height: 112px;
-  left: 816px;
-  top: 735px;
-  font-family: "Roboto";
-  font-size: 50px;
-  line-height: 112.4%;
+  top: 62%;
+  left: 57%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
   text-align: center;
   color: #323642;
   text-shadow: -2px 5px 8px #1a1c20;
@@ -95,8 +92,8 @@
 .main-page .animation .antman {
   position: absolute;
   width: 20px;
-  left: 217px;
-  top: 853px;
+  bottom: 10%;
+  left: 10%;
   -webkit-animation: zoomEffect 350ms 1s ease-in;
           animation: zoomEffect 350ms 1s ease-in;
   -webkit-animation-fill-mode: forwards;
@@ -105,8 +102,9 @@
 
 .main-page .animation .sayText {
   position: absolute;
-  left: 305px;
-  top: 39px;
+  width: 16%;
+  top: 10%;
+  left: 18%;
   opacity: 0;
   -webkit-animation: chat-enter 10ms 2s ease;
           animation: chat-enter 10ms 2s ease;
@@ -119,9 +117,9 @@
     width: 20px;
   }
   to {
-    width: 300px;
-    left: 75px;
-    top: 148px;
+    left: 6%;
+    bottom: 10%;
+    width: 15em;
   }
 }
 
@@ -130,9 +128,9 @@
     width: 20px;
   }
   to {
-    width: 300px;
-    left: 75px;
-    top: 148px;
+    left: 6%;
+    bottom: 10%;
+    width: 15em;
   }
 }
 
@@ -159,59 +157,51 @@
 =============*/
 .home-page {
   position: relative;
-  width: 100%;
+  width: auto;
   height: 100vh;
   background: #2a2e40;
 }
 
 .home-page .name {
-  position: absolute;
-  width: 680px;
-  height: 145px;
-  left: 218px;
-  top: 192px;
   font-family: "Roboto";
-  font-size: 100px;
-  line-height: 145.4%;
-  /* or 145px */
-  text-align: center;
+  font-size: 5rem;
+  font-size: calc(6rem + 1vw);
+  line-height: 1.3em;
+  padding-top: 10%;
+  padding-left: 2.5em;
   color: #3a4050;
   text-shadow: 0px 8px 9px #161616;
+  z-index: 3;
 }
 
 .home-page .score {
-  position: absolute;
-  width: 410px;
-  height: 145px;
-  left: 353px;
-  top: 337px;
+  width: 50%;
+  padding-top: 2%;
+  padding-left: 20%;
+  z-index: 3;
   font-family: "Roboto";
-  font-size: 100px;
-  line-height: 145.4%;
-  /* or 145px */
-  text-align: center;
+  font-size: calc(6rem + 1vw);
   color: #353a46;
   text-shadow: -3px 6px 12px #1e2027;
 }
 
 .home-page .get-task img {
   position: absolute;
-  width: 522.5px;
-  height: 166.5px;
-  left: 688px;
-  top: 540px;
+  width: calc(20rem + 4vw);
+  top: 60%;
+  z-index: 3;
+  left: 40%;
 }
 
 .home-page .get-task p {
   position: absolute;
-  width: 212px;
-  height: 112px;
-  left: 805px;
-  top: 567px;
-  font-family: "Roboto";
-  font-size: 50px;
-  line-height: 112.4%;
-  /* or 56px */
+  z-index: 3;
+  top: 62%;
+  left: 45%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5em;
   text-align: center;
   color: #323642;
   text-shadow: -2px 5px 8px #1a1c20;
@@ -229,24 +219,20 @@
           transform: translateY(-1px);
 }
 
+.home-page .view-review {
+  text-decoration: none;
+}
+
 .home-page .view-review img {
-  position: absolute;
-  width: 917px;
-  height: 78px;
-  left: 502px;
-  top: 90%;
+  width: 50%;
+  padding-top: 22%;
+  margin-left: 25%;
 }
 
 .home-page .view-review p {
-  position: absolute;
-  width: 528px;
-  height: 67px;
-  left: 696px;
-  top: 91%;
   font-family: "Roboto";
-  font-size: 40px;
-  line-height: 145.4%;
-  /* identical to box height, or 67px */
+  font-size: 2.3rem;
+  margin-top: -4.5%;
   text-align: center;
   color: #3a3f4a;
   text-shadow: 0px 4px 6px #191a20;
@@ -266,10 +252,9 @@
 
 .home-page .img-najim {
   position: absolute;
-  width: 550px;
-  height: 544.84px;
-  left: 1211px;
-  top: 123px;
+  width: 30%;
+  right: 10%;
+  top: 10%;
 }
 
 /* ============
@@ -277,21 +262,16 @@
 =============*/
 .task-page {
   position: relative;
-  width: 100%;
+  width: auto;
   height: 100vh;
   background: #2a2e40;
 }
 
 .task-page .task-number {
-  position: absolute;
-  width: 377px;
-  height: 145px;
-  left: 771px;
-  top: 109px;
   font-family: "Roboto";
-  font-size: 100px;
-  line-height: 145.4%;
-  /* or 145px */
+  font-size: 5rem;
+  font-size: calc(4rem + 1vw);
+  padding-top: 6%;
   text-align: center;
   color: #3a4050;
   text-shadow: 0px 8px 9px #161616;
@@ -299,92 +279,77 @@
 
 .task-page .right-slider {
   position: absolute;
-  width: 90.01px;
-  height: 237.93px;
-  right: 6%;
-  top: 40%;
-}
-
-.task-page .left-slider {
-  position: absolute;
-  width: 90.01px;
-  height: 237.93px;
-  left: 6%;
-  top: 40%;
+  width: 6rem;
+  right: 5%;
+  top: 30%;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
 
-.task-page .task-icon {
+.task-page .left-slider {
   position: absolute;
+  width: 6rem;
+  left: 5%;
+  top: 30%;
+}
+
+.task-page .task-icon {
   width: 51px;
-  height: 40px;
-  left: 988px;
-  top: 511px;
+  position: absolute;
+  top: 40%;
+  left: 60%;
 }
 
 .task-page .task-overview {
-  position: absolute;
-  width: 838px;
-  height: 375px;
-  left: 541px;
-  top: 374px;
   font-family: "Roboto";
-  font-size: 35px;
-  line-height: 100%;
-  /* or 35px */
+  margin-top: 2em;
+  margin-left: 25%;
+  font-size: 2em;
   color: #424450;
   text-shadow: 0px 4px 8px #262a34;
 }
 
 .task-page .rect-submit {
   position: absolute;
-  width: 1019px;
-  height: 101px;
-  left: 22%;
-  top: 87%;
+  width: 50%;
+  left: 25%;
+  top: 85%;
 }
 
 .task-page .submit-link {
-  position: absolute;
-  left: 100px;
-  top: 89%;
+  display: inline-block;
   font-family: "Roboto";
   font-size: 30px;
-  line-height: 100%;
-  /* or 35px */
-  text-align: center;
+  margin-top: 11%;
+  margin-left: 3%;
   color: #484c5b;
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .task-page form button {
+  background: transparent;
   border: none;
   cursor: pointer;
 }
 
 .task-page form button p {
   position: absolute;
-  width: 111px;
-  height: 35px;
-  left: 1608px;
-  top: 90%;
   font-family: "Roboto";
-  font-size: 35px;
-  line-height: 100%;
-  /* identical to box height, or 35px */
+  font-size: 2rem;
   text-align: center;
   color: #4b5063;
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  z-index: 2;
+  z-index: 9;
+  left: 82.5%;
+  top: 87%;
 }
 
 .task-page form button img {
   position: absolute;
-  width: 223px;
-  height: 101px;
-  left: 1547px;
-  top: 87%;
+  width: 11rem;
+  left: 80%;
+  top: 84.5%;
+  z-index: 0;
 }
 
 .task-page form button:hover img,
@@ -405,15 +370,13 @@
   border-bottom: 1px solid #3f424e;
   background: transparent;
   position: absolute;
-  width: 710px;
+  width: 45%;
   padding-bottom: 6px;
-  left: 30%;
-  top: 90%;
+  left: 27%;
+  top: 87%;
   z-index: 2;
   font-family: "Roboto";
   font-size: 35px;
-  line-height: 100%;
-  /* identical to box height, or 35px */
   color: #424450;
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
@@ -465,8 +428,8 @@
 
 .task-page form .hand {
   position: absolute;
-  left: 20%;
-  top: 90%;
+  left: 19.5%;
+  top: 88%;
   -webkit-animation: handMotion 200ms;
           animation: handMotion 200ms;
   -webkit-animation-iteration-count: 3;
