@@ -81,7 +81,7 @@
       width: 20px;
       left: 217px;
       top: 853px;
-      animation: zoomEffect 350ms 0.5s ease-in;
+      animation: zoomEffect 350ms 1s ease-in;
       animation-fill-mode: forwards;
     }
     .sayText {
@@ -89,7 +89,7 @@
       left: 305px;
       top: 39px;
       opacity: 0;
-      animation: chat-enter 10ms 1.5s ease;
+      animation: chat-enter 10ms 2s ease;
       animation-fill-mode: forwards;
     }
 
