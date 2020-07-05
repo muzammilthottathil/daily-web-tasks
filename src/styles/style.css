@@ -1,0 +1,475 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../../Assets/fonts/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ============
+    MAIN PAGE
+=============*/
+.main-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #2a2e40;
+}
+
+.main-page .welcome {
+  position: absolute;
+  left: 35%;
+  top: 123px;
+  font-family: "Roboto";
+  font-size: 100px;
+  line-height: 145.4%;
+  /* or 174px */
+  text-align: center;
+  color: #3a4050;
+  text-shadow: 0px 8px 9px #161616;
+}
+
+.main-page a {
+  -webkit-transition: -webkit-transform 200ms ease-in, -webkit-animation 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in, -webkit-animation 200ms ease-in-out;
+  transition: transform 200ms ease-in, animation 200ms ease-in-out;
+  transition: transform 200ms ease-in, animation 200ms ease-in-out, -webkit-transform 200ms ease-in, -webkit-animation 200ms ease-in-out;
+}
+
+.main-page a img {
+  position: absolute;
+  width: 522.5px;
+  height: 166.5px;
+  left: 699px;
+  top: 708px;
+}
+
+.main-page a p {
+  position: absolute;
+  width: 212px;
+  height: 112px;
+  left: 816px;
+  top: 735px;
+  font-family: "Roboto";
+  font-size: 50px;
+  line-height: 112.4%;
+  text-align: center;
+  color: #323642;
+  text-shadow: -2px 5px 8px #1a1c20;
+}
+
+.main-page a img,
+.main-page a p {
+  -webkit-animation: tagMotion 500ms;
+          animation: tagMotion 500ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes tagMotion {
+  from {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  to {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+}
+
+@keyframes tagMotion {
+  from {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  to {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+}
+
+.main-page .animation .antman {
+  position: absolute;
+  width: 20px;
+  left: 217px;
+  top: 853px;
+  -webkit-animation: zoomEffect 350ms 0.5s ease-in;
+          animation: zoomEffect 350ms 0.5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.main-page .animation .sayText {
+  position: absolute;
+  left: 305px;
+  top: 39px;
+  opacity: 0;
+  -webkit-animation: chat-enter 10ms 1.5s ease;
+          animation: chat-enter 10ms 1.5s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes zoomEffect {
+  from {
+    width: 20px;
+  }
+  to {
+    width: 300px;
+    left: 75px;
+    top: 148px;
+  }
+}
+
+@keyframes zoomEffect {
+  from {
+    width: 20px;
+  }
+  to {
+    width: 300px;
+    left: 75px;
+    top: 148px;
+  }
+}
+
+@-webkit-keyframes chat-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes chat-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ============
+    HOME PAGE
+=============*/
+.home-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #2a2e40;
+}
+
+.home-page .name {
+  position: absolute;
+  width: 680px;
+  height: 145px;
+  left: 218px;
+  top: 192px;
+  font-family: "Roboto";
+  font-size: 100px;
+  line-height: 145.4%;
+  /* or 145px */
+  text-align: center;
+  color: #3a4050;
+  text-shadow: 0px 8px 9px #161616;
+}
+
+.home-page .score {
+  position: absolute;
+  width: 410px;
+  height: 145px;
+  left: 353px;
+  top: 337px;
+  font-family: "Roboto";
+  font-size: 100px;
+  line-height: 145.4%;
+  /* or 145px */
+  text-align: center;
+  color: #353a46;
+  text-shadow: -3px 6px 12px #1e2027;
+}
+
+.home-page .get-task img {
+  position: absolute;
+  width: 522.5px;
+  height: 166.5px;
+  left: 688px;
+  top: 540px;
+}
+
+.home-page .get-task p {
+  position: absolute;
+  width: 212px;
+  height: 112px;
+  left: 805px;
+  top: 567px;
+  font-family: "Roboto";
+  font-size: 50px;
+  line-height: 112.4%;
+  /* or 56px */
+  text-align: center;
+  color: #323642;
+  text-shadow: -2px 5px 8px #1a1c20;
+}
+
+.home-page .get-task:hover img,
+.home-page .get-task:hover p {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.home-page .get-task:active img,
+.home-page .get-task:active p {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.home-page .view-review img {
+  position: absolute;
+  width: 917px;
+  height: 78px;
+  left: 502px;
+  top: 90%;
+}
+
+.home-page .view-review p {
+  position: absolute;
+  width: 528px;
+  height: 67px;
+  left: 696px;
+  top: 91%;
+  font-family: "Roboto";
+  font-size: 40px;
+  line-height: 145.4%;
+  /* identical to box height, or 67px */
+  text-align: center;
+  color: #3a3f4a;
+  text-shadow: 0px 4px 6px #191a20;
+}
+
+.home-page .view-review:hover img,
+.home-page .view-review:hover p {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.home-page .view-review:active img,
+.home-page .view-review:active p {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.home-page .img-najim {
+  position: absolute;
+  width: 550px;
+  height: 544.84px;
+  left: 1211px;
+  top: 123px;
+}
+
+/* ============
+    TASK PAGE
+=============*/
+.task-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #2a2e40;
+}
+
+.task-page .task-number {
+  position: absolute;
+  width: 377px;
+  height: 145px;
+  left: 771px;
+  top: 109px;
+  font-family: "Roboto";
+  font-size: 100px;
+  line-height: 145.4%;
+  /* or 145px */
+  text-align: center;
+  color: #3a4050;
+  text-shadow: 0px 8px 9px #161616;
+}
+
+.task-page .right-slider {
+  position: absolute;
+  width: 90.01px;
+  height: 237.93px;
+  right: 6%;
+  top: 40%;
+}
+
+.task-page .left-slider {
+  position: absolute;
+  width: 90.01px;
+  height: 237.93px;
+  left: 6%;
+  top: 40%;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.task-page .task-icon {
+  position: absolute;
+  width: 51px;
+  height: 40px;
+  left: 988px;
+  top: 511px;
+}
+
+.task-page .task-overview {
+  position: absolute;
+  width: 838px;
+  height: 375px;
+  left: 541px;
+  top: 374px;
+  font-family: "Roboto";
+  font-size: 35px;
+  line-height: 100%;
+  /* or 35px */
+  color: #424450;
+  text-shadow: 0px 4px 8px #262a34;
+}
+
+.task-page .rect-submit {
+  position: absolute;
+  width: 1019px;
+  height: 101px;
+  left: 22%;
+  top: 87%;
+}
+
+.task-page .submit-link {
+  position: absolute;
+  left: 100px;
+  top: 89%;
+  font-family: "Roboto";
+  font-size: 30px;
+  line-height: 100%;
+  /* or 35px */
+  text-align: center;
+  color: #484c5b;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.task-page form button {
+  border: none;
+  cursor: pointer;
+}
+
+.task-page form button p {
+  position: absolute;
+  width: 111px;
+  height: 35px;
+  left: 1608px;
+  top: 90%;
+  font-family: "Roboto";
+  font-size: 35px;
+  line-height: 100%;
+  /* identical to box height, or 35px */
+  text-align: center;
+  color: #4b5063;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+.task-page form button img {
+  position: absolute;
+  width: 223px;
+  height: 101px;
+  left: 1547px;
+  top: 87%;
+}
+
+.task-page form button:hover img,
+.task-page form button:hover p {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.task-page form button:active img,
+.task-page form button:active p {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.task-page form input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #3f424e;
+  background: transparent;
+  position: absolute;
+  width: 710px;
+  padding-bottom: 6px;
+  left: 30%;
+  top: 90%;
+  z-index: 2;
+  font-family: "Roboto";
+  font-size: 35px;
+  line-height: 100%;
+  /* identical to box height, or 35px */
+  color: #424450;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.task-page form input:invalid:focus ~ img {
+  -webkit-animation: handMotion 200ms;
+          animation: handMotion 200ms;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+
+@-webkit-keyframes handMotion {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  33% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  66% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes handMotion {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  33% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  66% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.task-page form .hand {
+  position: absolute;
+  left: 20%;
+  top: 90%;
+  -webkit-animation: handMotion 200ms;
+          animation: handMotion 200ms;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+/*# sourceMappingURL=style.css.map */
