@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasks</title>
     <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../init.js"></script>
   </head>
-  <body>
+  <body onload="afterLoad()">
     <div class="task-page">
-      <p class="score">Task Completed : <span>0 </span>/ <span>3</span></p>
+      <p class="score">
+        Task Completed : <span id="completed">0 </span>/
+        <span id="total">3</span>
+      </p>
       <a href="../../index.html" class="back">Back</a>
-      <p class="task-number">Task #3</p>
+      <p class="task-number">Task # <span id="task-number">3</span></p>
       <div>
-        <img class="task-img" src="../../Assets/tasks/task-3-img.svg" />
-        <img class="task" src="../../Assets/tasks/task-3.svg" />
+        <img id="task-img" class="task-img" src="" />
+        <img id="task" class="task" src="" />
       </div>
-
-      <img class="left-slider" src="../../Assets/sliderLightLeft.svg" alt="" />
-      <img class="right-slider" src="../../Assets/sliderLightLeft.svg" alt="" />
+      <img
+        onclick="decrease()"
+        class="left-slider"
+        src="../../Assets/sliderLightLeft.svg"
+        alt=""
+      />
+      <img
+        onclick="increase()"
+        class="right-slider"
+        src="../../Assets/sliderLightLeft.svg"
+        alt=""
+      />
       <img class="hand" src="../../Assets/hand.svg" alt="" />
       <a href="https://t.me/joinchat/KM8LnxtFawhWnVLyNRsDFg" class="link"
         >Send your Github Link Here</a
