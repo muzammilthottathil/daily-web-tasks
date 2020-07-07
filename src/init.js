@@ -1,5 +1,5 @@
 let totalTask = 3;
-let completedTask = 1;
+let completedTask = 0;
 
 let taskText = document.getElementById("task");
 let taskImage = document.getElementById("task-img");
