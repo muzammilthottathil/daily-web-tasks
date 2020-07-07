@@ -116,147 +116,93 @@
   height: 100vh;
 
   background: #2a2e40;
+  .back {
+    position: absolute;
+    text-decoration: none;
+    font-family: "Roboto";
+    top: 2%;
+    left: 2%;
+    font-size: calc(1vw + 1rem);
+    color: #444b5f;
+    text-shadow: 0px 8px 9px #222222;
+  }
   .score {
     font-family: "Roboto";
     position: absolute;
     top: 2%;
     right: 2%;
-    font-size: 2rem;
+    font-size: calc(1vw + 1rem);
     color: #3a4050;
     text-shadow: 0px 8px 9px #161616;
   }
   .task-number {
     font-family: "Roboto";
-    font-size: 5rem;
-    font-size: calc(4rem + 1vw);
+    font-size: calc(3rem + 2vw);
     padding-top: 6%;
     text-align: center;
     color: #3a4050;
     text-shadow: 0px 8px 9px #161616;
   }
-  .right-slider {
-    position: absolute;
-    width: 6rem;
-    right: 5%;
-    top: 30%;
-    transform: rotate(-180deg);
-  }
+  .right-slider,
   .left-slider {
     position: absolute;
-    width: 6rem;
-    left: 5%;
-    top: 30%;
-  }
-  .task-icon {
-    width: 51px;
-    position: absolute;
+    width: calc(3vw + 2rem);
     top: 40%;
-    left: 60%;
   }
-  .task-overview {
-    font-family: "Roboto";
-    margin-top: 2em;
-    margin-left: 25%;
-    font-size: 2em;
-    color: #424450;
-    text-shadow: 0px 5px 8px #22252e;
+  .right-slider {
+    transform: rotate(-180deg);
+    right: 4%;
   }
-  .rect-submit {
-    position: absolute;
-    width: 50%;
-    left: 25%;
-    top: 85%;
+  .left-slider {
+    left: 4%;
   }
-  .submit-link {
-    display: inline-block;
-    font-family: "Roboto";
-    font-size: 30px;
-    margin-top: 11%;
-    margin-left: 3%;
-    color: #484c5b;
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  }
-  form {
-    button {
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      p {
-        position: absolute;
-        font-family: "Roboto";
-        font-size: 2rem;
-        text-align: center;
-        color: #4b5063;
-        text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-        z-index: 9;
-        left: 82.5%;
-        top: 87%;
-      }
-      img {
-        position: absolute;
-        width: 11rem;
-        left: 80%;
-        top: 84.5%;
-        z-index: 0;
-      }
-      &:hover {
-        img,
-        p {
-          transform: translateY(-4px);
-        }
-      }
-      &:active {
-        img,
-        p {
-          transform: translateY(-1px);
-        }
-      }
-    }
-
-    input {
-      outline: none;
-      border: none;
-      border-bottom: 1px solid #3f424e;
-      background: transparent;
-
-      position: absolute;
-      width: 45%;
-      padding-bottom: 6px;
-      left: 27%;
-      top: 87%;
-      z-index: 2;
-      font-family: "Roboto";
-      font-size: 35px;
+  div {
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .task {
+      width: 70%;
+      margin-top: 10vmax;
+      font-size: 2em;
       color: #424450;
-
-      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-
-      &:invalid:focus ~ img {
-        animation: handMotion 200ms;
-        animation-iteration-count: 3;
-      }
-
-      @keyframes handMotion {
-        0% {
-          transform: translateX(0px);
-        }
-        33% {
-          transform: translateX(10px);
-        }
-        66% {
-          transform: translateX(-10px);
-        }
-        100% {
-          transform: translateX(0px);
-        }
-      }
+      text-shadow: 0px 5px 8px #22252e;
     }
-    .hand {
+    .task-img {
       position: absolute;
-      left: 19.5%;
-      top: 88%;
-      animation: handMotion 200ms;
-      animation-iteration-count: 3;
+      margin-left: 25%;
+      margin-top: 5%;
+      width: 20%;
+    }
+  }
+  .hand {
+    width: 3rem;
+    position: absolute;
+    left: 30%;
+    bottom: 5%;
+    animation: hand 300ms infinite;
+  }
+  .link {
+    text-decoration: none;
+    position: absolute;
+    font-family: "Roboto";
+    font-size: calc(0.5rem + 1vw);
+    text-align: center;
+    color: #58627e;
+    text-shadow: 0px 8px 9px #352349;
+    left: 38%;
+    bottom: 6%;
+  }
+  @keyframes hand {
+    0% {
+      transform: translateX(-3px);
+    }
+    50% {
+      transform: translateX(3px);
+    }
+    100% {
+      transform: translateX(-3px);
     }
   }
 }
