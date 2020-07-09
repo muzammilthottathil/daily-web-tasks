@@ -1,4 +1,4 @@
-let totalTask = 4;
+let totalTask = 5;
 let completedTask = 1;
 
 let taskText = document.getElementById("task");
