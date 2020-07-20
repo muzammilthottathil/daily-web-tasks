@@ -20,7 +20,7 @@ $desktop-width: 1024px;
   box-sizing: border-box;
 }
 .main-container {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   background-color: #d4fcff;
 
@@ -42,95 +42,96 @@ $desktop-width: 1024px;
       }
     }
   }
+  .welcome {
+    font-size: 20px;
+    color: #000000;
+    position: relative;
+    text-align: center;
+    padding-top: 6rem;
 
-  .tasks {
+    @include desktop {
+      padding-top: 11rem;
+      font-size: 40px;
+    }
+  }
+  .links {
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-evenly;
+      max-width: 90%;
+      margin: auto;
+    }
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    font-family: "Ravi Prakash", cursive;
 
-    .web-task-main,
-    .js-task-main {
-      margin-top: 20vh;
-      font-family: "Ravi Prakash", cursive;
-
-      background: #c6c0a3;
-      border-radius: 12px;
+    .web-tasks,
+    .js-tasks {
+      text-decoration: none;
+      color: #08244e;
       cursor: pointer;
-      margin-bottom: 200px;
+      width: 80vw;
+      background-color: #c6c0a3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 2.5vh 0;
+      padding: 10vh 20px;
+      border-radius: 2ch;
 
-      width: 85%;
+      @include desktop {
+        max-width: 38vw;
+        margin: 13vh 0;
+      }
 
-      padding: 10px;
       h1 {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 48px;
-        color: #08244e;
-        text-align: center;
-
-        @include tablet {
-          font-size: 50px;
-          line-height: 79px;
-        }
+        font-size: 2rem;
         @include desktop {
-          font-size: 60px;
-          line-height: 135px;
+          font-size: 3rem;
         }
       }
+
       div {
         display: flex;
-        justify-content: space-evenly;
-        padding-top: 20px;
-        flex-wrap: wrap;
-        a {
-          color: #08244e;
-          text-align: center;
-          display: inline-block;
-          padding: 20px;
-          width: 30vw;
-          margin: 20px;
-          text-decoration: none;
-          font-size: 20px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .completed {
           font-family: "Roboto Slab", serif;
 
-          background: #d1d1d1;
-          border-radius: 7px;
-
+          font-size: 1rem;
           @include desktop {
-            padding: 50px;
-            font-size: 25px;
+            font-size: 2rem;
           }
         }
-        .done {
-          background-color: #e3ffd1;
-          font-size: 16px;
-          &::after {
-            content: "✅";
-            padding-left: 1ch;
+        h2 {
+          padding: 0.5rem 1rem 0 1rem;
+          margin-left: 1rem;
+          font-size: 1.5rem;
+          border-radius: 0.8ch;
 
-            @include desktop {
-              padding-left: 2ch;
-              font-size: 25px;
-            }
-          }
+          background-color: #d1d1d1;
+
           @include desktop {
-            font-size: 25px;
+            font-size: 2.5rem;
           }
         }
       }
     }
-    .js-task-main {
-      background: #bfd5e6;
+    .js-tasks {
+      background-color: #bfd5e5;
       div {
-        a {
-          background: #ececec;
+        h2 {
+          background-color: #ececec;
         }
       }
     }
   }
-
   footer {
     font-style: normal;
     font-weight: normal;

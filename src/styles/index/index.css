@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Ravi+Prakash&family=Roboto+Slab&display=swap");
 * {
   padding: 0;
@@ -7,7 +8,7 @@
 }
 
 .main-container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #d4fcff;
   font-family: "Roboto Slab", serif;
@@ -15,6 +16,7 @@
 
 .main-container header {
   background-color: #e3ffd1;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,6 +27,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 70px;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -37,56 +40,36 @@
   }
 }
 
-.main-container .user {
-  text-align: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.3rem;
-  line-height: 26px;
-  text-align: center;
-  padding: 8vh 0;
-  color: #08244e;
+.main-container .tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .main-container .user {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .main-container .user {
-    font-size: 50px;
-    line-height: 66px;
-  }
-}
-
-.main-container .web-task-main,
-.main-container .js-task-main {
+.main-container .tasks .web-task-main,
+.main-container .tasks .js-task-main {
+  margin-top: 20vh;
   font-family: "Ravi Prakash", cursive;
   background: #c6c0a3;
   border-radius: 12px;
   cursor: pointer;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 20px;
-  height: 25vh;
-  padding: 30px;
+  margin-bottom: 200px;
+  width: 85%;
+  padding: 10px;
 }
 
-@media (min-width: 1024px) {
-  .main-container .web-task-main,
-  .main-container .js-task-main {
-    display: inline-block;
-    max-width: 35vw;
-    margin: 0 4vw 0 10vw;
-    height: 35vh;
-  }
-}
-
-.main-container .web-task-main h1,
-.main-container .js-task-main h1 {
+.main-container .tasks .web-task-main h1,
+.main-container .tasks .js-task-main h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -96,23 +79,23 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main-container .web-task-main h1,
-  .main-container .js-task-main h1 {
+  .main-container .tasks .web-task-main h1,
+  .main-container .tasks .js-task-main h1 {
     font-size: 50px;
     line-height: 79px;
   }
 }
 
 @media (min-width: 1024px) {
-  .main-container .web-task-main h1,
-  .main-container .js-task-main h1 {
+  .main-container .tasks .web-task-main h1,
+  .main-container .tasks .js-task-main h1 {
     font-size: 60px;
     line-height: 135px;
   }
 }
 
-.main-container .web-task-main div,
-.main-container .js-task-main div {
+.main-container .tasks .web-task-main div,
+.main-container .tasks .js-task-main div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,80 +103,65 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-top: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.main-container .web-task-main div p,
-.main-container .js-task-main div p {
-  display: inline;
-  font-family: "Roboto Slab", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 40px;
+.main-container .tasks .web-task-main div a,
+.main-container .tasks .js-task-main div a {
+  color: #08244e;
   text-align: center;
-  color: #08244e;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .main-container .web-task-main div p,
-  .main-container .js-task-main div p {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .main-container .web-task-main div p,
-  .main-container .js-task-main div p {
-    font-size: 40px;
-    line-height: 50px;
-  }
-}
-
-.main-container .web-task-main div span,
-.main-container .js-task-main div span {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 32px;
-  color: #08244e;
+  display: inline-block;
+  padding: 20px;
+  width: 30vw;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
   background: #d1d1d1;
-  border-radius: 5px;
-  padding: 10px;
-  padding-bottom: 5px;
+  border-radius: 7px;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .main-container .web-task-main div span,
-  .main-container .js-task-main div span {
-    padding: 20px;
-    padding-top: 30px;
-    margin-top: -15px;
-    font-size: 50px;
-    line-height: 25px;
+@media (min-width: 1024px) {
+  .main-container .tasks .web-task-main div a,
+  .main-container .tasks .js-task-main div a {
+    padding: 50px;
+    font-size: 25px;
+  }
+}
+
+.main-container .tasks .web-task-main div .done,
+.main-container .tasks .js-task-main div .done {
+  background-color: #e3ffd1;
+  font-size: 16px;
+}
+
+.main-container .tasks .web-task-main div .done::after,
+.main-container .tasks .js-task-main div .done::after {
+  content: "✅";
+  padding-left: 1ch;
+}
+
+@media (min-width: 1024px) {
+  .main-container .tasks .web-task-main div .done::after,
+  .main-container .tasks .js-task-main div .done::after {
+    padding-left: 2ch;
+    font-size: 25px;
   }
 }
 
 @media (min-width: 1024px) {
-  .main-container .web-task-main div span,
-  .main-container .js-task-main div span {
-    margin-top: -10px;
-    font-size: 50px;
-    line-height: 56px;
+  .main-container .tasks .web-task-main div .done,
+  .main-container .tasks .js-task-main div .done {
+    font-size: 25px;
   }
 }
 
-.main-container .js-task-main {
+.main-container .tasks .js-task-main {
   background: #bfd5e6;
 }
 
-@media (min-width: 1024px) {
-  .main-container .js-task-main {
-    margin: 0 10vw 0 4vw;
-  }
-}
-
-.main-container .js-task-main div span {
+.main-container .tasks .js-task-main div a {
   background: #ececec;
 }
 

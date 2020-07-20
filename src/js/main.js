@@ -1,2 +1,4 @@
-const showWebTasks = () => {};
+const showWebTasks = () => {
+  window.location = "./";
+};
 const showJsTasks = () => {};

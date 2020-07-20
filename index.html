@@ -4,37 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get your Daily Task here</title>
-    <link rel="stylesheet" href="./src/styles/index/index.css" />
+    <link rel="stylesheet" href="./src/styles/main/main.css" />
   </head>
+
   <body>
-    <!-- ✅ -->
     <div class="main-container">
       <header>
         <img src="./Assets/img/reangle.svg" alt="" />
       </header>
-      <section class="user">
+      <div class="welcome">
         Welcome <br />
-        Najim Rahman
-      </section>
-      <section class="web-task-main" onclick="showWebTasks()">
-        <h1>Daily Web Task</h1>
-        <div>
-          <p>Completed</p>
-          <span id="total-web-completed">0/5</span>
-        </div>
-      </section>
-      <section class="js-task-main" onclick="showJsTasks()">
-        <h1>Daily JS Task</h1>
-        <div>
-          <p>Completed</p>
-          <span id="total-web-completed">0/5</span>
-        </div>
-      </section>
+        Mr. Developer
+      </div>
+      <div class="links">
+        <a href="./src/pages/main_web.html" class="web-tasks">
+          <h1>Daily Web Tasks</h1>
+          <div>
+            <span class="completed">Completed</span>
+            <h2>0/5</h2>
+          </div>
+        </a>
+        <a href="./src/pages/main_js.html" class="js-tasks">
+          <h1>Daily JS Tasks</h1>
+          <div>
+            <span class="completed">Completed</span>
+            <h2>0/5</h2>
+          </div>
+        </a>
+      </div>
+
       <footer>
         Knowledge is Power
       </footer>
     </div>
-
-    <script src="./src/js/main.js"></script>
   </body>
 </html>
