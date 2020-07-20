@@ -1,1 +1,228 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Ravi+Prakash&family=Roboto+Slab&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #d4fcff;
+  font-family: "Roboto Slab", serif;
+}
+
+.main-container header {
+  background-color: #e3ffd1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+}
+
+@media (min-width: 1024px) {
+  .main-container header {
+    height: 120px;
+  }
+  .main-container header img {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+.main-container .user {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 26px;
+  text-align: center;
+  padding: 8vh 0;
+  color: #08244e;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container .user {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container .user {
+    font-size: 50px;
+    line-height: 66px;
+  }
+}
+
+.main-container .web-task-main,
+.main-container .js-task-main {
+  font-family: "Ravi Prakash", cursive;
+  background: #c6c0a3;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 25vh;
+  padding: 30px;
+}
+
+@media (min-width: 1024px) {
+  .main-container .web-task-main,
+  .main-container .js-task-main {
+    display: inline-block;
+    max-width: 35vw;
+    margin: 0 4vw 0 10vw;
+    height: 35vh;
+  }
+}
+
+.main-container .web-task-main h1,
+.main-container .js-task-main h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 48px;
+  color: #08244e;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container .web-task-main h1,
+  .main-container .js-task-main h1 {
+    font-size: 50px;
+    line-height: 79px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container .web-task-main h1,
+  .main-container .js-task-main h1 {
+    font-size: 60px;
+    line-height: 135px;
+  }
+}
+
+.main-container .web-task-main div,
+.main-container .js-task-main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+.main-container .web-task-main div p,
+.main-container .js-task-main div p {
+  display: inline;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #08244e;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container .web-task-main div p,
+  .main-container .js-task-main div p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container .web-task-main div p,
+  .main-container .js-task-main div p {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+.main-container .web-task-main div span,
+.main-container .js-task-main div span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 32px;
+  color: #08244e;
+  background: #d1d1d1;
+  border-radius: 5px;
+  padding: 10px;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container .web-task-main div span,
+  .main-container .js-task-main div span {
+    padding: 20px;
+    padding-top: 30px;
+    margin-top: -15px;
+    font-size: 50px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container .web-task-main div span,
+  .main-container .js-task-main div span {
+    margin-top: -10px;
+    font-size: 50px;
+    line-height: 56px;
+  }
+}
+
+.main-container .js-task-main {
+  background: #bfd5e6;
+}
+
+@media (min-width: 1024px) {
+  .main-container .js-task-main {
+    margin: 0 10vw 0 4vw;
+  }
+}
+
+.main-container .js-task-main div span {
+  background: #ececec;
+}
+
+.main-container footer {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+  height: 1.4rem;
+  position: fixed;
+  color: white;
+  background-color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container footer {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -4,20 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get your Daily Task here</title>
-    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/index/index.css" />
   </head>
   <body>
-    <div class="main-page">
-      <p class="welcome">Hi, Welcome to <br />daily-web-tasks</p>
-
-      <a href="./src/pages/task-6.html" class="get-task">
-        <img src="./Assets/getTask.svg" alt="get-task" />
-        <p class="getTask">Get your <br />Task now</p>
-      </a>
-      <span class="animation">
-        <img src="./Assets/antman.png" alt="" class="antman" />
-        <img src="./Assets/chat.svg" alt="" class="sayText" />
-      </span>
+    <!-- ✅ -->
+    <div class="main-container">
+      <header>
+        <img src="./Assets/img/reangle.svg" alt="" />
+      </header>
+      <section class="user">
+        Welcome <br />
+        Najim Rahman
+      </section>
+      <section class="web-task-main" onclick="showWebTasks()">
+        <h1>Daily Web Task</h1>
+        <div>
+          <p>Completed</p>
+          <span id="total-web-completed">0/5</span>
+        </div>
+      </section>
+      <section class="js-task-main" onclick="showJsTasks()">
+        <h1>Daily JS Task</h1>
+        <div>
+          <p>Completed</p>
+          <span id="total-web-completed">0/5</span>
+        </div>
+      </section>
+      <footer>
+        Knowledge is Power
+      </footer>
     </div>
+
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
