@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2a2e40;
+}
+
+body {
+  height: 30vw;
+  width: 50%;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 5%;
+  background-color: #2a2e40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bulb {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.glass,
+.end {
+  background: transparent;
+}
+
+.glass {
+  position: absolute;
+  width: 13vw;
+  top: 20%;
+  left: 34%;
+  opacity: 30%;
+  transition: filter 0.5s ease-in, opacity 1s ease-in;
+}
+.glass:hover {
+  opacity: 1;
+  filter: drop-shadow(0px -10px 45px #fff);
+}
+
+.end {
+  position: absolute;
+  width: 7vw;
+  top: 76%;
+  left: 40%;
+  z-index: 3;
+}

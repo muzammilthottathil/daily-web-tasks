@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger Icon</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #056679;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      div {
+        height: 10px;
+        width: 50px;
+        background-color: #fff;
+        border-radius: 4px;
+        position: relative;
+      }
+      div::before,
+      div::after {
+        content: "";
+        height: 10px;
+        width: 50px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        position: absolute;
+      }
+      div::before {
+        top: -150%;
+      }
+      div::after {
+        bottom: -150%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bar"></div>
+  </body>
+</html>

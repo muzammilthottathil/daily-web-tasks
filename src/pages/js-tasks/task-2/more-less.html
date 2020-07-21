@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More-less</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(170, 204, 160);
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+      .content {
+        text-align: center;
+        max-width: 90%;
+        margin: auto;
+        margin-top: 5%;
+      }
+      button {
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        padding: 10px 20px;
+        color: white;
+        background-color: #0e00d4;
+        border-radius: 10px;
+        outline: none;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe facere
+      nihil consectetur laudantium labore officiis voluptate magnam ipsa amet
+      excepturi eaque placeat, earum voluptatibus. Quibusdam obcaecati harum id
+      deserunt officia inventore ut quidem pariatur tenetur? Porro, nam autem
+      dicta repellat minus tempora consequuntur ipsa ipsam modi laudantium amet
+      vitae magnam!
+      <span id="more">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nam
+        placeat est sequi ipsa optio explicabo sapiente dolorum quas id
+        molestias harum, cumque aliquam rem quo et ut excepturi natus adipisci
+        itaque! Quisquam quod nulla quam modi corporis ad optio mollitia saepe
+        laborum aliquam minus, in dignissimos? Itaque, id magni?
+      </span>
+      <button onclick="show()" id="button"></button>
+    </div>
+
+    <script>
+      let button = document.getElementById("button");
+      let more = document.getElementById("more").style;
+      let showContent = true;
+
+      more.display = "none";
+      button.innerHTML = "See More";
+
+      const show = () => {
+        showContent
+          ? ((more.display = "block"), (button.innerHTML = "See Less"))
+          : ((more.display = "none"), (button.innerHTML = "See More"));
+
+        showContent = !showContent;
+      };
+    </script>
+  </body>
+</html>

@@ -187,6 +187,13 @@
   background-color: #ececec;
 }
 
+@media (min-width: 1024px) {
+  .main-container .links .js-tasks {
+    max-width: 38vw;
+    margin: 13vh 0;
+  }
+}
+
 .main-container footer {
   font-style: normal;
   font-weight: normal;

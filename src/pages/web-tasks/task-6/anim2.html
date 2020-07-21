@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anim2</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: radial-gradient(
+          82.53% 82.53% at 50% 45.55%,
+          #ffffff 0%,
+          rgba(165, 165, 165, 0.89) 52.08%,
+          rgba(51, 51, 51, 0.65) 100%
+        );
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+        border-radius: 50%;
+        background-color: #9e9e9e;
+        animation: loading ease-in-out 500ms infinite alternate;
+      }
+      .first {
+        animation-delay: 0s;
+      }
+      .second {
+        animation-delay: 0.25s;
+      }
+      .third {
+        animation-delay: 0.5s;
+      }
+
+      @keyframes loading {
+        from {
+          transform: scale(0.4);
+          opacity: 0.5;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+  </body>
+</html>

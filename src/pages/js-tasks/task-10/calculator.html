@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .calculator {
+        display: flex;
+        flex-direction: column;
+      }
+      #display {
+        text-align: right;
+        font-family: "Orbitron", sans-serif;
+        border: inset 2px solid silver;
+        height: 4rem;
+        width: 510px;
+        font-size: 3rem;
+        color: rgb(82, 77, 112);
+
+        background-color: rgb(253, 241, 241);
+      }
+      .key-pad {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 510px;
+        height: 450px;
+        border: 2px solid #333;
+        background-color: rgb(157, 255, 203);
+      }
+
+      .key-pad div div {
+        background-color: rgb(35, 71, 40);
+        color: rgb(255, 255, 255);
+        font-weight: normal;
+        font-size: 2rem;
+        padding: 20px;
+        text-align: center;
+        border-radius: 50%;
+        margin: 20px;
+        cursor: pointer;
+        box-shadow: 3px 3px #888;
+        transition: transform ease-in-out 20ms;
+      }
+      .key-pad div div:active {
+        transform: translateY(3px) translateX(3px) scale(0.9);
+        box-shadow: -1px -1px #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <div id="display">0</div>
+      <div class="key-pad">
+        <div>
+          <div id="seven" onclick="findButton('7')">7</div>
+          <div id="four" onclick="findButton('4')">4</div>
+          <div id="one" onclick="findButton('1')">1</div>
+          <div id="zero" onclick="findButton('0')">0</div>
+        </div>
+        <div>
+          <div id="eight" onclick="findButton('8')">8</div>
+          <div id="five" onclick="findButton('5')">5</div>
+          <div id="two" onclick="findButton('2')">2</div>
+          <div id="divide" onclick="findButton('/')">/</div>
+        </div>
+        <div>
+          <div id="nine" onclick="findButton('9')">9</div>
+          <div id="six" onclick="findButton('6')">6</div>
+          <div id="three" onclick="findButton('3')">3</div>
+          <div id="mul" onclick="findButton('*')">*</div>
+        </div>
+        <div>
+          <div id="mod" onclick="findButton('%')">%</div>
+          <div id="minus" onclick="findButton('-')">-</div>
+          <div class="plus" onclick="findButton('+')">+</div>
+          <div id="equals" onclick="findButton('=')">=</div>
+        </div>
+        <div>
+          <div id="clear" onclick="findButton('c')">C</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const actions = ["/", "*", "+", "-", "%", "="];
+      var equation, result;
+      var x = "",
+        y = 0,
+        z,
+        a = "+";
+
+      const equate = (a, operator, b) => {
+        switch (operator) {
+          case "+":
+            return a + b;
+          case "-":
+            return a - b;
+          case "/":
+            return a / b;
+          case "*":
+            return a * b;
+          case "%":
+            return a % b;
+        }
+      };
+      const findButton = (selectedButton) => {
+        if (!actions.includes(selectedButton)) {
+          x += selectedButton;
+          document.getElementById("display").innerHTML += selectedButton;
+        } else {
+          console.log(x);
+
+          console.log(equate(y, selectedButton, Number(x)));
+          y = Number(x);
+          a = x;
+          x = "";
+          console.log(y, a);
+
+          z = actions.indexOf(selectedButton);
+
+          var value = document.getElementById("display").innerHTML;
+          document.getElementById("display").innerHTML = "";
+          console.log(value + " action");
+        }
+      };
+    </script>
+  </body>
+</html>

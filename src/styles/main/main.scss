@@ -132,6 +132,11 @@ $desktop-width: 1024px;
           background-color: #ececec;
         }
       }
+
+      @include desktop {
+        max-width: 38vw;
+        margin: 13vh 0;
+      }
     }
   }
   footer {

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Task#1</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(208, 221, 248);
+      }
+      #viewArea {
+        height: 30vh;
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5vh;
+        border-radius: 10px;
+        background-color: rgb(216, 216, 216);
+      }
+      input {
+        border-radius: 12px;
+        height: 30px;
+        padding: 10px;
+        outline: none;
+      }
+      .input {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      label {
+        padding-right: 20px;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-color: transparent;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        font-weight: bolder;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="colorName"></h1>
+    <div id="viewArea"></div>
+    <div class="input">
+      <label for="Color"
+        >Type Hex Code <br />
+        or Color Name
+      </label>
+      <input type="text" name="Color" id="Color" />
+    </div>
+
+    <button onclick="change()">Change</button>
+
+    <!-- ====================
+            JAVASCRIPT 
+        ===================-->
+
+    <script>
+      const change = () => {
+        var inputValue = document.getElementById("Color").value;
+
+        document.getElementById("colorName").innerHTML = inputValue;
+        document.getElementById("viewArea").style.backgroundColor = inputValue;
+        document.getElementById("Color").value = "";
+      };
+    </script>
+  </body>
+</html>
