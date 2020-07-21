@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get your Daily Task here</title>
+    <link rel="icon" type="image/png" href="../../Assets/img/reangle.png" />
+    <link rel="stylesheet" href="../styles/task-viewer/task-viewer.css" />
+  </head>
+  <body>
+    <div class="task-viewer">
+      <header>
+        <h2 onclick="goBack()">
+          Back
+        </h2>
+        <h1 id="taskName"></h1>
+      </header>
+      <section class="task-description">
+        <h3>Task description</h3>
+        <span id="description"></span>
+      </section>
+      <section class="frame">
+        <h3>Expected Output</h3>
+        <iframe id="frame" frameborder="0"></iframe>
+      </section>
+      <footer>
+        Knowledge is Power
+      </footer>
+    </div>
+
+    <script src="../js/task-viewer.js"></script>
+  </body>
+</html>

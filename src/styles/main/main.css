@@ -91,6 +91,10 @@
   text-decoration: none;
   color: #08244e;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
   width: 80vw;
   background-color: #c6c0a3;
   display: -webkit-box;
@@ -176,6 +180,12 @@
   .main-container .links .js-tasks div h2 {
     font-size: 2.5rem;
   }
+}
+
+.main-container .links .web-tasks:active,
+.main-container .links .js-tasks:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .main-container .links .js-tasks {

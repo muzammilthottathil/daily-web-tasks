@@ -8,7 +8,7 @@
 }
 
 .main-container {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   background-color: #d4fcff;
   font-family: "Roboto Slab", serif;
@@ -62,7 +62,6 @@
   font-family: "Ravi Prakash", cursive;
   background: #c6c0a3;
   border-radius: 12px;
-  cursor: pointer;
   margin-bottom: 200px;
   width: 85%;
   padding: 10px;
@@ -109,6 +108,7 @@
 
 .main-container .tasks .web-task-main div a,
 .main-container .tasks .js-task-main div a {
+  cursor: pointer;
   color: #08244e;
   text-align: center;
   display: inline-block;
@@ -120,6 +120,10 @@
   font-family: "Roboto Slab", serif;
   background: #d1d1d1;
   border-radius: 7px;
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
 }
 
 @media (min-width: 1024px) {
@@ -128,6 +132,12 @@
     padding: 50px;
     font-size: 25px;
   }
+}
+
+.main-container .tasks .web-task-main div a:active,
+.main-container .tasks .js-task-main div a:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .main-container .tasks .web-task-main div .done,

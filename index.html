@@ -18,18 +18,18 @@
         Mr. Developer
       </div>
       <div class="links">
-        <a href="./src/pages/main_web.html" class="web-tasks">
+        <a onclick="goToMain('webTask')" class="web-tasks">
           <h1>Daily Web Tasks</h1>
           <div>
             <span class="completed">Completed</span>
-            <h2>0/5</h2>
+            <h2 id="webScore">0/5</h2>
           </div>
         </a>
-        <a href="./src/pages/main_js.html" class="js-tasks">
+        <a onclick="goToMain('jsTask')" class="js-tasks">
           <h1>Daily JS Tasks</h1>
           <div>
             <span class="completed">Completed</span>
-            <h2>0/5</h2>
+            <h2 id="jsScore">0/5</h2>
           </div>
         </a>
       </div>
@@ -38,5 +38,7 @@
         Knowledge is Power
       </footer>
     </div>
+
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
