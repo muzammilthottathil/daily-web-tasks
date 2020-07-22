@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewer-Dummy</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        width: 100%;
+      }
+      header {
+        background-color: yellow;
+        color: darkblue;
+        min-height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1 id="taskName"></h1></header>
+    <div class="task"><h2>TASK HERE</h2></div>
+
+    <script>
+      let taskName = window.localStorage.getItem("taskNameDummy");
+      document.getElementById("taskName").innerHTML = taskName;
+    </script>
+  </body>
+</html>

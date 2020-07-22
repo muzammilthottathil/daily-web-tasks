@@ -42,6 +42,10 @@ const webStatus = [
     name: "Task-6",
     completed: false,
   },
+  {
+    name: "Weekend-1",
+    completed: false,
+  },
 ];
 
 /*

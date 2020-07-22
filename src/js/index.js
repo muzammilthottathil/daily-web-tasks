@@ -4,7 +4,7 @@ const jsScore = {
 };
 const webScore = {
   completed: 5,
-  total: 6,
+  total: 7,
 };
 
 document.getElementById("webScore").innerHTML =

@@ -35,6 +35,12 @@ const webTasks = [
       "Create the Loading animation shown below. You can use KEYFRAMES to achieve the output, also flex properties will help to arrange items. The three dots must be three divs not images.",
     source: "./web-tasks/task-6/anim2.html",
   },
+  {
+    name: "weekend-1",
+    description:
+      "Create a website to maintain the daily tasks given. Here is a wireframe demo. You can use YOU OWN DESIGNS, ANIMATIONS, IDEAS to build a better one. Make it more attractive as you can...",
+    source: "./web-tasks/weekend-1/task-web.html",
+  },
 ];
 
 /*

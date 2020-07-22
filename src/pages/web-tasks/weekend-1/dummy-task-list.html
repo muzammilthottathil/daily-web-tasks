@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Task List Dummy
+    </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        width: 100%;
+        background-color: aliceblue;
+      }
+      header {
+        background-color: yellow;
+        color: darkblue;
+        min-height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .tasks {
+        margin-top: 20vh;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+      }
+      .tasks div {
+        background-color: darkblue;
+        color: white;
+        font-size: 1.5rem;
+        width: 30vw;
+        margin: auto;
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1 id="taskType"></h1></header>
+    <div class="tasks">
+      <div onclick="showTask('Task-1')">Task-1</div>
+      <div onclick="showTask('Task-2')">Task-2</div>
+      <div onclick="showTask('Task-3')">Task-3</div>
+      <div onclick="showTask('Task-4')">Task-4</div>
+      <div onclick="showTask('Task-5')">Task-5</div>
+      <div onclick="showTask('Task-6')">Task-6</div>
+      <div onclick="showTask('Weekend-1')">Weekend-1</div>
+      <div onclick="showTask('Task-8')">Task-8</div>
+      <div onclick="showTask('Task-9')">Task-9</div>
+      <div onclick="showTask('Task-10')">Task-10</div>
+    </div>
+
+    <script>
+      let taskType = window.localStorage.getItem("taskTypeDummy");
+      document.getElementById("taskType").innerHTML = taskType;
+
+      const showTask = (taskName) => {
+        window.localStorage.setItem("taskNameDummy", taskName);
+        window.location = "./viewer.html";
+      };
+    </script>
+  </body>
+</html>
