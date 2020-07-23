@@ -7,6 +7,10 @@ const jsStatus = [
     name: "Task-2",
     completed: false,
   },
+  {
+    name: "Task-3",
+    completed: false,
+  },
 ];
 
 /*

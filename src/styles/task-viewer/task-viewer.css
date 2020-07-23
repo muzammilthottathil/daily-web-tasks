@@ -10,7 +10,7 @@
   font-family: "Roboto Slab", serif;
   background: #d4fcff;
   min-height: 100vh;
-  height: 2000px;
+  padding-bottom: 150px;
 }
 
 .task-viewer header {

@@ -1,6 +1,6 @@
 const jsScore = {
   completed: 0,
-  total: 2,
+  total: 3,
 };
 const webScore = {
   completed: 5,

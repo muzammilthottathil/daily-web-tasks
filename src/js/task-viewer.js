@@ -68,6 +68,12 @@ const jsTasks = [
       "Create a button, such that on clicking it increase the display content and on again clicking on it will reduce the onscreen content.",
     source: "./js-tasks/task-2/more-less.html",
   },
+  {
+    name: "task-3",
+    description:
+      "Create a Tic Tac Toe game , which can be played by 2 players. You have display their scores seperately for players. And also provide a RESET button to reset the game and score. Here is a demo of the game. You can use your own designs, no matter what the design is, focus on the game.",
+    source: "./js-tasks/task-3/tictactoe.html",
+  },
 ];
 
 /*
